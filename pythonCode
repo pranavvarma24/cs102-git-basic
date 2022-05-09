@@ -1,0 +1,26 @@
+print("No of students in class: ")
+num = int(input())
+fname = ""
+lname = ""
+department = ""
+state = ""
+age= 0
+rollno = 0
+studata = [[],[],[],[],[],[]]
+for i in range(num):
+    fname = input("Enter first name of student ")
+    lname = input("Enter last name of student ")
+    rollno = input("Enter the roll no of student ")
+    age = int(input("Enter the age of student "))
+    department = input("Enter the department of student ")
+    state = input("Enter the state of student in full form ")
+    studata[0]+= [fname]
+    studata[1]+=[lname]
+    studata[2]+=[rollno]
+    studata[3]+=[age]
+    studata[4]+=[department]
+    studata[5]+=[state]
+    ch = input("If you want to quit entering data the press 'n' else press any key")
+    if (ch == "n"):
+        break
+print(studata)
